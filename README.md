@@ -13,3 +13,7 @@
 - docs: Changes to documentation.
 - style: Code style changes (formatting, white-space, etc.).
 - refactor: Rewriting code without changing its external behavior.
+
+  API:
+  - https://docs.apilayer.com/aviationstack/docs/aviationstack-api-v-1-0-0
+  - https://docs.apilayer.com/aviationstack/docs/api-documentation#api-endpoints-summary - доступные апи
