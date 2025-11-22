@@ -7,9 +7,9 @@
 5) нейминг веток:  (feat|fix|chore|docs|style|refactor)/description
 6) нейминг коммитов: feat|fix|chore|docs|style|refactor(scope or task number): subject
 
-feat: A new feature for the user.
-fix: A bug fix for the user.
-chore: Routine tasks, maintenance, or dependency updates (no production code change).
-docs: Changes to documentation.
-style: Code style changes (formatting, white-space, etc.).
-refactor: Rewriting code without changing its external behavior.
+- feat: A new feature for the user.
+- fix: A bug fix for the user.
+- chore: Routine tasks, maintenance, or dependency updates (no production code change).
+- docs: Changes to documentation.
+- style: Code style changes (formatting, white-space, etc.).
+- refactor: Rewriting code without changing its external behavior.
