@@ -3,25 +3,25 @@ export interface AviationStackResponse {
   data: FlightData[];
 }
 
-export interface Pagination {
+interface Pagination {
   limit: number;
   offset: number;
   count: number;
   total: number;
 }
 
-export interface FlightData {
+interface FlightData {
   flight_date: string;
   flight_status: FlightStatus;
   departure: FlightEndpoint;
-  arrival: FlightEndpoint
+  arrival: FlightEndpoint;
   airline: AirlineInfo;
   flight: FlightInfo;
   aircraft: AircraftInfo | null;
   live: LiveInfo | null;
 }
 
-export interface FlightEndpoint {
+interface FlightEndpoint {
   airport: string;
   timezone: string;
   iata: string;
@@ -37,7 +37,7 @@ export interface FlightEndpoint {
   baggage: string | null;
 }
 
-export interface AirlineInfo {
+interface AirlineInfo {
   id: string;
   fleet_average_age: number | null;
   airline_id: string | null;
@@ -55,21 +55,21 @@ export interface AirlineInfo {
   type: string;
 }
 
-export interface FlightInfo {
+interface FlightInfo {
   number: string;
   iata: string;
   icao: string;
   codeshared: Record<string, unknown> | null;
 }
 
-export interface AircraftInfo {
+interface AircraftInfo {
   registration: string;
   iata: string;
   icao: string;
   icao24: string;
 }
 
-export interface LiveInfo {
+interface LiveInfo {
   updated: string;
   latitude: number;
   longitude: number;
@@ -79,7 +79,7 @@ export interface LiveInfo {
   speed_vertical: number;
   is_ground: boolean;
 }
-export type FlightStatus =
+type FlightStatus =
   | "scheduled"
   | "active"
   | "landed"
